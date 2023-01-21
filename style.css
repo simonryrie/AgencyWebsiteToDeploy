@@ -1,3 +1,53 @@
+/* Layout Primitives */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.width-sm {
+  max-width: 25rem;
+}
+
+.width-md {
+  max-width: 40rem;
+}
+
+.width-lg {
+  max-width: 55rem;
+}
+
+.width-lg {
+  max-width: 70rem;
+}
+
+.stack-sm > * + * {
+  margin-top: 1rem;
+}
+
+.stack-md > * + * {
+  margin-top: 2rem;
+}
+
+.stack-lg > * + * {
+  margin-top: 4rem;
+}
+
+.stack-xl > * + * {
+  margin-top: 6rem;
+}
+
+.row {
+  display: flex;
+}
+
+.sticky {
+  position: sticky;
+}
+
+/*Will create additional classes as necessary */
+
+/*Initial CSS classes - will edit */
+
 nav {
   background-color: #f2f2f2; 
   padding: 10px; 
