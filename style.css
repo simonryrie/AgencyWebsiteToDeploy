@@ -1,4 +1,22 @@
 /* Layout Primitives */
+.text {
+  font-family: sans-serif;
+}
+
+.smaller-font {
+  font-size: 1vmax;
+  font-weight: normal;
+}
+
+.bold-font {
+  font-size: 1.5vmax;
+  font-weight: bold;
+}
+
+.no-top-margin {
+  margin-top: 0;
+  padding-top: 5rem;
+}
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -16,8 +34,14 @@
   max-width: 55rem;
 }
 
-.width-lg {
+.width-xl {
   max-width: 70rem;
+}
+
+.width-full {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
 .stack-sm > * + * {
@@ -38,15 +62,101 @@
 
 .row {
   display: flex;
+  gap: 1rem;
+}
+
+.backdrop {
+  background-image: url("/Assets/ankhurr-chawaak-d93q_0kRQ-s-unsplash.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 0 0 0;
+}
+
+.justify-center {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-space-between {
+  justify-content: space-between;
 }
 
 .sticky {
+  position: -webkit-sticky; /* Safari */
   position: sticky;
+  top: 0;
 }
+
+.padded-from-edge {
+  padding: 1rem;
+}
+
+.black-background {
+  background-color: black;
+}
+
+.on-black-background {
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes link-hover {
+  from {color: white;}
+  to {color: palevioletred;}
+}
+
+.link:hover {
+  animation-name: link-hover;
+  animation-duration: 1s;
+}
+
+.current {
+  color: palevioletred;
+}
+
+.landing-title {
+  font-size: 5vmax;
+  margin-left: 3rem;
+  max-width: 80%;
+}
+
+.landing-subtitle {
+  font-size: 3vmax;
+  margin-left: 3rem;
+  max-width: 80%;
+}
+
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+    gap: 10rem;
+  }
+
+  .landing-title {
+    font-size: 7vmax;
+    margin-left: 20rem;
+  }
+  
+  .landing-subtitle {
+    font-size: 2vmax;
+    margin-left: 20rem;
+  }
+
+}
+
 
 /*Will create additional classes as necessary */
 
 /*Initial CSS classes - will edit */
+
+/*
 
 nav {
   background-color: #f2f2f2; 
@@ -73,9 +183,11 @@ nav ul {
 }
 
 nav li {
-  display: inline-block; /* makes the list items display in a row */
+  display: inline-block; 
   border-right: 1px solid white;
 }
+
+*/
 
 .logo{
   
