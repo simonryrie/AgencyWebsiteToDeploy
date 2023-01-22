@@ -1,4 +1,12 @@
 /* Layout Primitives */
+.background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
 .text {
   font-family: sans-serif;
 }
@@ -17,6 +25,7 @@
   margin-top: 0;
   padding-top: 5rem;
 }
+
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -41,7 +50,10 @@
 .width-full {
   width: 100vw;
   margin: 0;
-  padding: 0;
+}
+
+.height-full {
+  height: 100vh;
 }
 
 .stack-sm > * + * {
@@ -56,21 +68,13 @@
   margin-top: 4rem;
 }
 
-.stack-xl > * + * {
+.stack-xl {
   margin-top: 6rem;
 }
 
 .row {
   display: flex;
   gap: 1rem;
-}
-
-.backdrop {
-  background-image: url("/Assets/ankhurr-chawaak-d93q_0kRQ-s-unsplash.jpg");
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  margin: 0 0 0 0;
 }
 
 .justify-center {
@@ -92,10 +96,11 @@
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .padded-from-edge {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .black-background {
@@ -105,6 +110,10 @@
 .on-black-background {
   color: white;
   text-decoration: none;
+}
+
+.contrast-text {
+  color: black;
 }
 
 @keyframes link-hover {
@@ -133,7 +142,7 @@
   max-width: 80%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .row {
     display: flex;
     gap: 10rem;
@@ -141,16 +150,36 @@
 
   .landing-title {
     font-size: 7vmax;
-    margin-left: 20rem;
+    margin-left: 18rem;
   }
   
   .landing-subtitle {
     font-size: 2vmax;
-    margin-left: 20rem;
+    margin-left: 18rem;
   }
 
 }
 
+.flex-down {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.on-top {
+  position: relative;
+}
+
+.stuck-to-bottom {
+  position: absolute;
+  bottom: -5rem;
+  margin-right: -5rem;
+} 
+
+.button {
+  max-width: 20rem;
+  border: solid 0.1rem black;
+}
 
 /*Will create additional classes as necessary */
 

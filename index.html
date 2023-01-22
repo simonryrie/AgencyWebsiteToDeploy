@@ -7,8 +7,11 @@
     <title>Agency Website</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="width-full">
-    <header class="sticky row black-background padded-from-edge">
+  <body class="width-full height-full">
+    <video autoplay muted loop class="background-video" id="backgroundVideo">
+        <source src="/Assets/Videos/Sakura - 110790.mp4">
+    </video>
+    <header class="sticky width-full row black-background padded-from-edge">
       <img src="/Assets/facicon.png" alt="logo" class="logo">
       <nav class="center">
         <ul class="row">  
@@ -18,17 +21,18 @@
         </ul>
       </nav>
     </header>
-    <section class="backdrop">
-      <h1 class="no-top-margin text landing-title">We're on your side</h1>
-      <p class="text landing-subtitle">
-        Connecting talented developers with exciting opportunities
+    <section class="on-top flex-down">
+      <h1 class="text landing-title contrast-text">Helping you bloom</h1>
+      <p class="text landing-subtitle contrast-text">
+        We connect talented developers with exciting opportunities
       </p>
+      <button type="button" onclick="window.location.href='contact.html'" class="button text landing-subtitle bold-font contrast-text link">Get in touch</button>
     </section>
-    <footer class="row justify-space-between black-background">
-      <p class="text on-black-background padded-from-edge smaller-font">
+    <footer class="row justify-space-between padded-from-edge black-background stuck-to-bottom width-full">
+      <p class="text on-black-background smaller-font">
         © SM Recruitment 2023
       </p>
-      <ul class="row center padded-from-edge smaller-font">  
+      <ul class="row center smaller-font">  
         <li><a href="linkedin.com" class="text smaller-font link on-black-background">LinkedIn</a></li>
         <li><a href="twitter.com" class="text smaller-font link  on-black-background">Twitter</a></li>
         <li><a href="instagram.com" class="text smaller-font link on-black-background">Instagram</a></li>
