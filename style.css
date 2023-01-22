@@ -1,4 +1,9 @@
 /* Layout Primitives */
+.text-center {
+  text-align: center;
+  padding: 2rem;
+}
+
 .background-video {
   position: fixed;
   right: 0;
@@ -24,9 +29,17 @@
 }
 
 .fill-half {
-  min-height: 92vh;
+  min-height: 91vh;
   margin: 0 0 0 0;
   padding: 2vmax 5vmax 2vmax 5vmax;
+}
+
+@media (min-width: 900px) {
+  .fill-half {
+    min-height: 85vh;
+    margin: 0 0 0 0;
+    padding: 2vmax 5vmax 2vmax 5vmax;
+  }
 }
 
 .text {
@@ -97,7 +110,7 @@
   margin-top: 1rem;
 }
 
-.stack-md > * + * {
+.stack-md > {
   margin-top: 2rem;
 }
 
@@ -112,6 +125,12 @@
 .row {
   display: flex;
   gap: 1rem;
+  max-width: 100vw;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .justify-center {
@@ -127,6 +146,10 @@
 
 .justify-space-between {
   justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
 }
 
 .sticky {
@@ -221,12 +244,29 @@
   position: absolute;
   bottom: -5rem;
   margin-right: -5rem;
+}
+
+.stuck-to-bottom-with-flex {
+  position: relative;
+  bottom: -5rem;
+  margin-right: -5rem;
 } 
 
 .button {
   max-width: 20rem;
   border: solid 0.1rem black;
   background-color: white;
+}
+
+.profile {
+  max-width: 13.5rem;
+}
+
+.profile-img {
+  width: 18vmax; 
+  height: 18vmax;
+  object-fit: cover;
+  border-radius: 9vmax;
 }
 
 /*Will create additional classes as necessary */
@@ -272,7 +312,7 @@ nav li {
   height: 50px;  
 }
 
-
+/*
 #about-us {
   background-color: #f2f2f2; 
   padding: 20px; 
@@ -283,6 +323,10 @@ nav li {
   text-align: center; 
   margin-bottom: 20px; 
 }
+
+*/
+
+/*
 
 .team-members {
   display: flex; 
@@ -302,7 +346,6 @@ nav li {
   border-radius: 50%; 
   margin-bottom: 20px; 
 }
-
 
 #contact-section {
   background-color: #f2f2f2; 
