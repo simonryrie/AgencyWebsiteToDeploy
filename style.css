@@ -2,6 +2,17 @@
 .text {
   font-family: sans-serif;
 }
+
+.smaller-font {
+  font-size: 1vmax;
+  font-weight: normal;
+}
+
+.bold-font {
+  font-size: 1.5vmax;
+  font-weight: bold;
+}
+
 .no-top-margin {
   margin-top: 0;
   padding-top: 5rem;
@@ -73,6 +84,10 @@
   justify-content: flex-start;
 }
 
+.justify-space-between {
+  justify-content: space-between;
+}
+
 .sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -80,18 +95,16 @@
 }
 
 .padded-from-edge {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .black-background {
   background-color: black;
 }
 
-.link {
+.on-black-background {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.5vmax;
 }
 
 @keyframes link-hover {
@@ -133,7 +146,7 @@
   
   .landing-subtitle {
     font-size: 2vmax;
-    margin: 0rem 0rem 0rem 20rem;
+    margin-left: 20rem;
   }
 
 }
